@@ -1,0 +1,92 @@
+GET http://localhost:3000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEwLCJuYW1lIjoidXN0b24iLCJ1c2VybmFtZSI6InV0ZSIsImVtYWlsIjoidGVzdGluZzJAZ21haWwuY29tIiwibm9fdGVscCI6IjAxODIyNzkyMDAwIiwiYWxhbWF0IjpudWxsLCJpbWFnZSI6bnVsbCwiaWF0IjoxNzAxMTI4OTIyLCJleHAiOjE3MDExMjg5Mzd9.TxnB-7FS4h4iTzUB71oS1sgmQM6LMd7u-xcHWjY6oFE
+
+### REGISTER
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "name": "Testing",
+    "username": "testing1",
+    "email": "testing@gmail.com",
+    "no_telp" : "089786786",
+    "password" :  "12345678",
+    "confirmPassword" : "12345678"
+}
+
+### LOGIN
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "username" : "ute",
+    "password" : "123"
+}
+
+
+### ME
+GET http://localhost:3000/me/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEwLCJuYW1lIjoiQWdpbCBTYXRyaWEgQW5jYW5nIFBhbXVuZ2thcyIsInVzZXJuYW1lIjoidXRlIiwiZW1haWwiOiJnaWxzYXRyaWExMjFAZ21haWwuY29tIiwibm9fdGVscCI6IjAxODIyNzkyMDAwIiwiYWxhbWF0IjoiMTIzIiwiaW1hZ2UiOiJhMWU5ZGU2ZGYxMGRlNGIwZTljZTI5MDMxMjZhMWJhOS5wbmciLCJuaWsiOiIxMjMiLCJqayI6Im1hbGUiLCJ0Z2wiOiIyMDIzLTExLTI5Iiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzAxMjY5MjkzLCJleHAiOjE3MDEyNjkzMTN9.zAmzFe0EQnWuhnMkjTNa4GYXNURtQcz2pTwzUCnF7Fo
+
+### TOKEN
+GET http://localhost:3000/token
+
+
+
+###
+DELETE  http://localhost:3000/logout
+
+
+
+### ARTIKEL
+GET http://localhost:3000/artikel
+
+
+### ARTIKEL:id
+GET http://localhost:3000/artikel/14
+
+
+### ARTIKEL
+POST http://localhost:3000/artikel
+Content-Type: multipart/form-data
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEwLCJuYW1lIjoidXN0b24iLCJ1c2VybmFtZSI6InV0ZSIsImVtYWlsIjoidGVzdGluZzJAZ21haWwuY29tIiwibm9fdGVscCI6IjAxODIyNzkyMDAwIiwiYWxhbWF0IjpudWxsLCJpbWFnZSI6bnVsbCwiaWF0IjoxNzAxMTMxNTgyLCJleHAiOjE3MDExMzI3ODJ9.G-32cchHFq9CsbOKv69Y8aHt-27LV8LIFSi0yraykYE
+
+
+### lokasi
+GET http://localhost:3000/lokasi
+
+
+### lokasi:id
+GET http://localhost:3000/lokasi/1
+
+
+### stories
+GET http://localhost:3000/stories
+
+
+### stories:id
+GET http://localhost:3000/stories/1
+
+### pendonor
+GET http://localhost:3000/pendonor
+
+
+### pendonor:id
+GET http://localhost:3000/pendonor/1
+
+
+### landing
+GET http://localhost:3000/landing
+
+
+### landing:id
+GET http://localhost:3000/landing/1
+
+
+### goldar
+GET http://localhost:3000/goldar
+
+
+### goldar:id
+GET http://localhost:3000/goldar/1
+
